@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "states",
+  "info": {
+    "singularName": "state",
+    "pluralName": "states",
+    "displayName": "State"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Abbreviation": {
+      "type": "string"
+    },
+    "drone_pilots": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::drone-pilot.drone-pilot",
+      "mappedBy": "state"
+    }
+  }
+}
