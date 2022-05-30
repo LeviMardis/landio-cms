@@ -22,6 +22,12 @@
       "relation": "oneToMany",
       "target": "api::drone-pilot.drone-pilot",
       "mappedBy": "state"
+    },
+    "listings": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::listing.listing",
+      "mappedBy": "state"
     }
   }
 }
