@@ -12,14 +12,19 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Name": {
-      "type": "string"
-    },
     "state": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::state.state",
       "inversedBy": "listings"
+    },
+    "Landio_ID": {
+      "type": "string",
+      "required": true
+    },
+    "Test": {
+      "type": "dynamiczone",
+      "components": []
     }
   }
 }
