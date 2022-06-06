@@ -4,30 +4,31 @@
   "info": {
     "singularName": "state",
     "pluralName": "states",
-    "displayName": "State"
+    "displayName": "State",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "Name": {
+    "name": {
       "type": "string"
     },
-    "Abbreviation": {
+    "postal_code": {
       "type": "string"
     },
-    "drone_pilot": {
+    "drone_pilots": {
       "type": "relation",
-      "relation": "oneToOne",
+      "relation": "oneToMany",
       "target": "api::drone-pilot.drone-pilot",
       "mappedBy": "state"
     },
     "listings": {
       "type": "relation",
-      "relation": "oneToOne",
+      "relation": "oneToMany",
       "target": "api::listing.listing",
-      "inversedBy": "listing_state"
+      "mappedBy": "listing_state"
     }
   }
 }

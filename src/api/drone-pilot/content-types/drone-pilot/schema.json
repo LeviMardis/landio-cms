@@ -22,12 +22,6 @@
       "type": "email",
       "unique": true
     },
-    "state": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::state.state",
-      "inversedBy": "drone_pilot"
-    },
     "Skills": {
       "displayName": "Skills",
       "type": "component",
@@ -38,6 +32,12 @@
       "type": "component",
       "repeatable": true,
       "component": "drone-pilot-info.skills"
+    },
+    "state": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::state.state",
+      "inversedBy": "drone_pilots"
     }
   }
 }

@@ -18,16 +18,16 @@
       "unique": true,
       "required": true
     },
-    "listing_state": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::state.state",
-      "inversedBy": "listings"
-    },
     "image_galleries": {
       "type": "component",
       "repeatable": false,
       "component": "photos.photos"
+    },
+    "listing_state": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::state.state",
+      "inversedBy": "listings"
     }
   }
 }
