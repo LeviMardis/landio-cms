@@ -12,17 +12,32 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Name": {
+    "first_name": {
       "type": "string"
     },
-    "Email": {
-      "type": "email"
+    "last_name": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email",
+      "unique": true
     },
     "state": {
       "type": "relation",
-      "relation": "manyToOne",
+      "relation": "oneToOne",
       "target": "api::state.state",
-      "inversedBy": "drone_pilots"
+      "inversedBy": "drone_pilot"
+    },
+    "Skills": {
+      "displayName": "Skills",
+      "type": "component",
+      "repeatable": true,
+      "component": "drone-pilot-info.skills"
+    },
+    "counties": {
+      "type": "component",
+      "repeatable": true,
+      "component": "drone-pilot-info.skills"
     }
   }
 }

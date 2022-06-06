@@ -12,19 +12,22 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "state": {
+    "landio_id": {
+      "type": "string",
+      "regex": "[A-Z]{2}_[^_]+_[0-9]{5}",
+      "unique": true,
+      "required": true
+    },
+    "listing_state": {
       "type": "relation",
-      "relation": "manyToOne",
+      "relation": "oneToOne",
       "target": "api::state.state",
       "inversedBy": "listings"
     },
-    "Landio_ID": {
-      "type": "string",
-      "required": true
-    },
-    "Test": {
-      "type": "dynamiczone",
-      "components": []
+    "image_galleries": {
+      "type": "component",
+      "repeatable": false,
+      "component": "photos.photos"
     }
   }
 }

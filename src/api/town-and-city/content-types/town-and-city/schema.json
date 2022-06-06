@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "towns_and_cities",
+  "info": {
+    "singularName": "town-and-city",
+    "pluralName": "towns-and-cities",
+    "displayName": "Town and City",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "regex": "[A-Z]{2} - [\\S\\s]+",
+      "required": true
+    },
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}

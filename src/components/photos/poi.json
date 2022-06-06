@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_photos_pois",
+  "info": {
+    "displayName": "POI",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "point_of_interest": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::point-of-interest.point-of-interest"
+    }
+  }
+}

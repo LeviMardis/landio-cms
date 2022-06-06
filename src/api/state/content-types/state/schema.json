@@ -17,17 +17,17 @@
     "Abbreviation": {
       "type": "string"
     },
-    "drone_pilots": {
+    "drone_pilot": {
       "type": "relation",
-      "relation": "oneToMany",
+      "relation": "oneToOne",
       "target": "api::drone-pilot.drone-pilot",
       "mappedBy": "state"
     },
     "listings": {
       "type": "relation",
-      "relation": "oneToMany",
+      "relation": "oneToOne",
       "target": "api::listing.listing",
-      "mappedBy": "state"
+      "inversedBy": "listing_state"
     }
   }
 }

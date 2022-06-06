@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_drone_pilot_info_skills",
+  "info": {
+    "displayName": "name_field",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    }
+  }
+}

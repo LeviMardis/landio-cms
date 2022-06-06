@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_photos_t_and_cs",
+  "info": {
+    "displayName": "town_and_city",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "town_and_city": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::town-and-city.town-and-city"
+    }
+  }
+}

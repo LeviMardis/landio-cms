@@ -1,0 +1,52 @@
+{
+  "collectionName": "components_photos_photos",
+  "info": {
+    "displayName": "Photos",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "property_images": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "maps": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "route_to_property": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "neighboring_area": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "points_of_interest": {
+      "type": "component",
+      "repeatable": true,
+      "component": "photos.poi"
+    },
+    "towns_and_cities": {
+      "type": "component",
+      "repeatable": true,
+      "component": "photos.t-and-c"
+    }
+  }
+}

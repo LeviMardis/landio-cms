@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "points_of_interest",
+  "info": {
+    "singularName": "point-of-interest",
+    "pluralName": "points-of-interest",
+    "displayName": "Point of Interest",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "regex": "[A-Z]{2} - [\\S\\s]+",
+      "default": "ID - Name",
+      "required": true
+    },
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}
