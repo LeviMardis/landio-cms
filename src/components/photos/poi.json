@@ -10,6 +10,13 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::point-of-interest.point-of-interest"
+    },
+    "images": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true
     }
   }
 }
