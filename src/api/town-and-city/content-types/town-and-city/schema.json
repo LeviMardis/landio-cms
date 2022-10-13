@@ -24,6 +24,14 @@
       "allowedTypes": [
         "images"
       ]
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "Requested",
+        "Update",
+        "Complete"
+      ]
     }
   }
 }

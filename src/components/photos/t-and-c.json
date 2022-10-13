@@ -12,11 +12,16 @@
       "target": "api::town-and-city.town-and-city"
     },
     "images": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
+    },
+    "name": {
+      "type": "string",
+      "private": true
     }
   }
 }

@@ -2,7 +2,7 @@
   "name": "landio-cms",
   "private": true,
   "version": "0.1.0",
-  "description": "A Strapi application",
+  "description": "LANDiO CMS=",
   "scripts": {
     "develop": "strapi develop",
     "start": "strapi start",
@@ -10,15 +10,15 @@
     "strapi": "strapi"
   },
   "dependencies": {
-    "@strapi/plugin-i18n": "4.1.12",
-    "@strapi/plugin-users-permissions": "4.1.12",
-    "@strapi/strapi": "4.1.12",
+    "@strapi/plugin-i18n": "4.4.3",
+    "@strapi/plugin-users-permissions": "4.4.3",
+    "@strapi/provider-upload-aws-s3": "^4.4.3",
+    "@strapi/strapi": "4.4.3",
     "better-sqlite3": "7.4.6",
-    "pg": "^8.7.3",
-    "strapi-provider-upload-dos": "^4.0.5"
+    "pg": "^8.7.3"
   },
   "author": {
-    "name": "A Strapi developer"
+    "name": "RocketMouse"
   },
   "strapi": {
     "uuid": "6e847d94-4d6c-4f9d-b95e-67909acad702"

@@ -1,19 +1,26 @@
 module.exports = [
   'strapi::errors',
   {
-    name: "strapi::security",
+    name: 'strapi::security',
     config: {
       contentSecurityPolicy: {
         useDefaults: true,
         directives: {
-          "connect-src": ["'self'", "https:"],
-          "img-src": [
+          'connect-src': ["'self'", 'https:'],
+          'img-src': [
             "'self'",
-            "data:",
-            "blob:",
-            "*.digitaloceanspaces.com"
+            'data:',
+            'blob:',
+            'dl.airtable.com',
+            'landio-gallery.sfo2.digitaloceanspaces.com/landio_cms/',
           ],
-          "media-src": ["'self'", "data:", "blob:"],
+          'media-src': [
+            "'self'",
+            'data:',
+            'blob:',
+            'dl.airtable.com',
+            'landio-gallery.sfo2.digitaloceanspaces.com/landio_cms/',
+          ],
           upgradeInsecureRequests: null,
         },
       },
@@ -26,5 +33,5 @@ module.exports = [
   'strapi::body',
   'strapi::session',
   'strapi::favicon',
-  'strapi::public',
-];
+  'strapi::public'
+]

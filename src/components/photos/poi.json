@@ -12,11 +12,16 @@
       "target": "api::point-of-interest.point-of-interest"
     },
     "images": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
+    },
+    "name": {
+      "type": "string",
+      "private": true
     }
   }
 }
