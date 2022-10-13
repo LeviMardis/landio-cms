@@ -96,6 +96,10 @@ module.exports = {
             await strapi.entityService.update(event.model.uid, id, {
                 data: {
                     image_galleries: {
+                        property_images: currentListing.image_galleries.property_images,
+                        maps: currentListing.image_galleries.maps,
+                        route_to_property: currentListing.image_galleries.route_to_property,
+                        neighboring_area: currentListing.image_galleries.neighboring_area,
                         points_of_interest: pointsOfInterest,
                         towns_and_cities: townsAndCities
                     }
